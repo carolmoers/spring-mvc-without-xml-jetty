@@ -11,6 +11,10 @@ apply plugin: 'java'
 apply plugin: 'war'
 apply from: 'https://raw.github.com/akhikhl/gretty/master/pluginScripts/gretty.plugin'
 
+gretty {
+    contextPath = '/'
+}
+
 sourceCompatibility = 1.5
 
 repositories {
